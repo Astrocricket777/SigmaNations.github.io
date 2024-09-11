@@ -17,7 +17,7 @@ map.fitBounds(bounds);
 
 
 var marker = L.marker([749.96875, 745.390625]).addTo(map);
-marker.bindTooltip("City of Uruk", {permanent: true, className: "my-label", offset: [0, 0] });
+marker.bindTooltip("Uruk", {permanent: true, className: "my-label", offset: [0, 0] });
 marker.addTo(map);
 
 var marker2 = L.marker([807.5625, 836.6875]).addTo(map);
@@ -28,25 +28,31 @@ var marker3 = L.marker([747.75, 914.25]).addTo(map);
 marker3.bindTooltip("Chentary Lake", {permanent: true, className: "my-label", offset: [0, 0] });
 marker3.addTo(map);
 
+var marker4 = L.marker([757.421875, 659.78125]).addTo(map);
+marker4.bindTooltip("Kish", {permanent: true, className: "my-label", offset: [0, 0] });
+marker4.addTo(map);
+
 var polygon = L.polygon([
     [743.09375, 729.703125],
     [743.21875, 757.3125],
     [764.225586, 756.905273],
+    [764.09375, 729.708984]
+    
+], {color: 'red'}).addTo(map);
+
+
+var polygon2 = L.polygon([
     [761.203125, 666.15625],
     [762.203125, 662.453125],
     [761.25, 658.046875],
     [759.828125, 657.078125],
     [754.625, 656.9375],
-    [753.46875, 658.359375]
-]).addTo(map);
-
-
-var polygon2 = L.polygon([
+    [753.46875, 658.359375],
     [753.296875, 664.484375],
     [756.75, 668.5],
-    [758.25, 668.71875],
-    [764.09375, 729.708984]
-]).addTo(map);
+    [758.25, 668.71875]
+    
+], {color: 'red'}).addTo(map);
 
 var popup = L.popup();
 
