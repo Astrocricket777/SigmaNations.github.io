@@ -11,7 +11,7 @@ var positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}
 }).addTo(map);
 
 var bounds = [[0,0], [1000, 1500]];
-var image = L.imageOverlay('image2.png', bounds).addTo(map);
+var image = L.imageOverlay('Image2.png', bounds).addTo(map);
 map.fitBounds(bounds);
 
 
